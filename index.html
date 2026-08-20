@@ -1,1 +1,412 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Piscina Inteligente — Aquecimento sustentável com energia solar, sensores e automação. Projeto Integrador CEP." />
+  <title>🌞 Piscina Inteligente — Projeto Integrador</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+
+<!-- HEADER / MENU -->
+<header>
+  <div class="nav-container">
+    <div class="logo">
+      <span class="sol-animado">☀️</span> Piscina Inteligente
+    </div>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav aria-label="Menu principal">
+      <ul id="menu">
+        <li><a href="#inicio">🏠 Início</a></li>
+        <li><a href="#problema">🔎 Problema</a></li>
+        <li><a href="#solucao">☀️ Solução</a></li>
+        <li><a href="#fisica">🔬 Física</a></li>
+        <li><a href="#automacao">🤖 Automação</a></li>
+        <li><a href="#programacao">💻 Programação</a></li>
+        <li><a href="#sustentabilidade">🌱 Sustentabilidade</a></li>
+        <li><a href="#acessibilidade">♿ Acessibilidade</a></li>
+        <li><a href="#simulador">📊 Simulador</a></li>
+        <li><a href="#equipe">👥 Equipe</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- 1. HERO -->
+  <section class="hero" id="inicio">
+    <div class="raios" aria-hidden="true">
+      <div class="raio" style="left: 10%; animation-delay: 0s;"></div>
+      <div class="raio" style="left: 25%; animation-delay: 0.5s;"></div>
+      <div class="raio" style="left: 40%; animation-delay: 1s;"></div>
+      <div class="raio" style="left: 55%; animation-delay: 1.5s;"></div>
+      <div class="raio" style="left: 70%; animation-delay: 2s;"></div>
+      <div class="raio" style="left: 85%; animation-delay: 2.5s;"></div>
+    </div>
+
+    <h1>🌞 Piscina Inteligente</h1>
+    <p class="subtitulo">Aquecimento sustentável, tecnologia e inclusão</p>
+    <p class="pergunta">Como podemos aquecer uma piscina de forma eficiente, sustentável e inteligente?</p>
+    <p class="pergunta">Nosso projeto propõe um sistema automatizado de aquecimento para a piscina térmica do CEP utilizando energia solar, princípios de óptica, sensores e programação.</p>
+    <a href="#solucao" class="btn-principal">Conheça a solução</a>
+
+    <div class="cards-destaque">
+      <div class="card">
+        <div class="icone">☀️</div>
+        <h3>Energia Solar</h3>
+        <p>Aproveitamento da radiação solar para aquecimento.</p>
+      </div>
+      <div class="card">
+        <div class="icone">🤖</div>
+        <h3>Automação</h3>
+        <p>Sensores e atuadores trabalhando de forma inteligente.</p>
+      </div>
+      <div class="card">
+        <div class="icone">♿</div>
+        <h3>Acessibilidade</h3>
+        <p>Um projeto pensado para ser sustentável e acessível a todos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. O PROBLEMA -->
+  <section id="problema">
+    <h2>🔎 Por que precisamos de uma solução?</h2>
+    <p>Manter uma piscina aquecida pode exigir uma quantidade significativa de energia. Quando essa energia vem de fontes não renováveis, o processo pode aumentar os impactos ambientais e os custos de funcionamento.</p>
+    <p>Por isso, nosso projeto busca desenvolver uma alternativa que utilize a energia do Sol e um sistema automatizado capaz de controlar o aquecimento de acordo com as condições da piscina.</p>
+
+    <table class="tabela-comparativa">
+      <caption style="caption-side: top; text-align: left; padding: 0.5rem; color: var(--verde); font-weight: bold;">Comparativo: Sistema convencional × Nossa proposta</caption>
+      <thead>
+        <tr>
+          <th>Sistema convencional</th>
+          <th>Nossa proposta</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Maior consumo de energia</td><td>Uso da energia solar</td></tr>
+        <tr><td>Controle menos inteligente</td><td>Sensores automatizados</td></tr>
+        <tr><td>Maior impacto ambiental</td><td>Fonte renovável</td></tr>
+        <tr><td>Controle manual</td><td>Controle automático</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 3. SOLUÇÃO -->
+  <section id="solucao">
+    <h2>☀️ Como funciona o sistema?</h2>
+    <p>O sistema utiliza coletores solares para captar a radiação do Sol. A energia absorvida pelos materiais do coletor é transformada em energia térmica, aumentando a temperatura da água.</p>
+    <p>Sensores monitoram constantemente as condições do sistema. Um controlador analisa essas informações e determina quando a circulação da água deve ser ativada ou interrompida.</p>
+
+    <div class="diagrama" aria-label="Diagrama do sistema">
+      <div class="etapa">☀️ Sol</div>
+      <div class="seta">↓</div>
+      <div class="etapa">🔲 Coletor solar</div>
+      <div class="seta">↓</div>
+      <div class="etapa">💧 Aquecimento da água</div>
+      <div class="seta">↓</div>
+      <div class="etapa">🌡️ Sensor de temperatura</div>
+      <div class="seta">↓</div>
+      <div class="etapa">🧠 Controlador</div>
+      <div class="seta">↓</div>
+      <div class="etapa">⚙️ Bomba/atuador</div>
+      <div class="seta">↓</div>
+      <div class="etapa">🏊 Piscina</div>
+    </div>
+  </section>
+
+  <!-- 4. FÍSICA -->
+  <section id="fisica">
+    <h2>🔬 A Física por trás do projeto</h2>
+    <p>A luz solar transporta energia e diferentes materiais interagem de maneiras diferentes com essa radiação.</p>
+
+    <div class="grid-sensores">
+      <div class="card">
+        <div class="icone">☀️</div>
+        <h3>Absorção</h3>
+        <p>Materiais de cores escuras tendem a absorver uma maior quantidade de radiação luminosa, convertendo parte dessa energia em energia térmica.</p>
+      </div>
+      <div class="card">
+        <div class="icone">↩️</div>
+        <h3>Reflexão</h3>
+        <p>Materiais refletivos podem ser utilizados para direcionar ou evitar a perda de radiação, dependendo da função dentro do sistema.</p>
+      </div>
+      <div class="card">
+        <div class="icone">🔀</div>
+        <h3>Refração</h3>
+        <p>A mudança de direção da luz ao passar de um meio para outro é chamada de refração, relacionada ao funcionamento de elementos ópticos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. CORES / DISCO DE NEWTON -->
+  <section id="cores">
+    <h2>🎨 Luz, cores e o Disco de Newton</h2>
+    <p>A luz branca do Sol é formada por diferentes cores, que podem ser observadas quando a luz é separada em seus componentes, como demonstrado pelo Disco de Newton.</p>
+    <p>As cores também estão relacionadas à forma como os materiais absorvem e refletem a luz. Um material escuro absorve grande parte da radiação incidente, enquanto materiais claros tendem a refletir uma parcela maior.</p>
+
+    <h3 style="color: var(--amarelo); margin-top: 1.5rem;">Escolha uma cor para o coletor:</h3>
+    <div class="seletor-cores" role="group" aria-label="Seletor de cores do coletor">
+      <button class="botao-cor vermelho" data-cor="Vermelho" aria-label="Vermelho">🔴</button>
+      <button class="botao-cor azul" data-cor="Azul" aria-label="Azul">🔵</button>
+      <button class="botao-cor verde" data-cor="Verde" aria-label="Verde">🟢</button>
+      <button class="botao-cor preto" data-cor="Preto" aria-label="Preto">⚫</button>
+      <button class="botao-cor branco" data-cor="Branco" aria-label="Branco">⚪</button>
+    </div>
+    <div class="resultado-cor" id="resultadoCor" aria-live="polite">
+      Clique em uma cor para ver o comportamento.
+    </div>
+  </section>
+
+  <!-- 6. CÂMARA ESCURA -->
+  <section id="camara">
+    <h2>📷 Da Câmara Escura ao coletor solar</h2>
+    <p>A Câmara Escura demonstra que a luz se propaga em linha reta e que uma abertura pode formar uma imagem no interior de uma caixa.</p>
+    <p>Embora o nosso sistema de aquecimento tenha uma finalidade diferente, os dois experimentos mostram como o comportamento da luz pode ser utilizado para compreender e desenvolver tecnologias.</p>
+    <p>No projeto, estudamos como a radiação solar interage com diferentes materiais para escolher uma configuração mais eficiente para a captação de energia.</p>
+  </section>
+
+  <!-- 7. AUTOMAÇÃO -->
+  <section id="automacao">
+    <h2>🤖 Como a piscina se torna inteligente?</h2>
+    <p>O sensor de temperatura mede continuamente a água. Essas informações são enviadas para um controlador, que executa uma programação previamente definida.</p>
+
+    <div class="diagrama" aria-label="Fluxograma do controlador">
+      <div class="etapa">☀️ Sol</div>
+      <div class="seta">↓</div>
+      <div class="etapa">COLETOR SOLAR</div>
+      <div class="seta">↓</div>
+      <div class="etapa">💧 Água</div>
+      <div class="seta">↓</div>
+      <div class="etapa">🌡️ Sensor de temperatura</div>
+      <div class="seta">↓</div>
+      <div class="etapa">🧠 CONTROLADOR</div>
+      <div class="seta">↙ ↘</div>
+      <div style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center;">
+        <div class="etapa" style="background: var(--verde);">Temperatura adequada? → DESLIGA</div>
+        <div class="etapa" style="background: var(--amarelo); color: var(--texto-escuro);">Temperatura baixa? → ATIVA BOMBA</div>
+      </div>
+      <div class="seta">↓</div>
+      <div class="etapa">🔄 Circulação</div>
+      <div class="seta">↓</div>
+      <div class="etapa">🏊 Piscina</div>
+    </div>
+
+    <p>Quando a temperatura estiver abaixo do valor desejado e houver condições adequadas para aquecimento, o sistema pode acionar uma bomba para fazer a água circular pelo coletor solar.</p>
+  </section>
+
+  <!-- 8. SENSORES -->
+  <section id="sensores">
+    <h2>⚙️ Sensores e atuadores</h2>
+    <div class="grid-sensores">
+      <div class="sensor-card">
+        <div class="icone">🌡️</div>
+        <h4>Sensor de temperatura</h4>
+        <p>Mede a temperatura da água.</p>
+      </div>
+      <div class="sensor-card">
+        <div class="icone">☀️</div>
+        <h4>Sensor de luminosidade</h4>
+        <p>Identifica a intensidade da radiação disponível.</p>
+      </div>
+      <div class="sensor-card">
+        <div class="icone">💧</div>
+        <h4>Sensor de fluxo</h4>
+        <p>Verifica se a água está circulando corretamente.</p>
+      </div>
+      <div class="sensor-card">
+        <div class="icone">⚙️</div>
+        <h4>Bomba</h4>
+        <p>Realiza a circulação da água pelo sistema.</p>
+      </div>
+      <div class="sensor-card">
+        <div class="icone">🧠</div>
+        <h4>Microcontrolador</h4>
+        <p>Recebe dados dos sensores e executa a lógica programada.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. PROGRAMAÇÃO -->
+  <section id="programacao">
+    <h2>💻 Programação</h2>
+    <p>Exemplo simples da lógica do sistema:</p>
+
+    <pre class="codigo"><span class="palavra-chave">INÍCIO</span>
+
+  Ler temperatura da piscina
+  Ler intensidade solar
+
+  <span class="palavra-chave">SE</span> temperatura &lt; temperatura desejada
+      <span class="palavra-chave">E</span> intensidade solar suficiente
+  <span class="palavra-chave">ENTÃO</span>
+      ligar bomba
+  <span class="palavra-chave">SENÃO</span>
+      desligar bomba
+
+  Repetir
+
+<span class="palavra-chave">FIM</span></pre>
+
+    <p>Essa lógica permite que o sistema tome decisões automaticamente, reduzindo a necessidade de intervenção humana e evitando que a bomba funcione sem necessidade.</p>
+
+    <button class="btn-simular" id="btnSimularRapido">▶️ Simular sistema</button>
+    <div class="resultado-simulador" id="resultadoRapido" aria-live="polite">
+      Clique no botão para ver a simulação.
+    </div>
+  </section>
+
+  <!-- 10. SUSTENTABILIDADE -->
+  <section id="sustentabilidade">
+    <h2>🌱 Uma piscina mais sustentável</h2>
+    <div class="cards-destaque">
+      <div class="card">
+        <div class="icone">☀️</div>
+        <h3>Energia renovável</h3>
+        <p>Utilização da radiação solar como fonte de energia.</p>
+      </div>
+      <div class="card">
+        <div class="icone">⚡</div>
+        <h3>Eficiência energética</h3>
+        <p>O sistema opera conforme a necessidade, evitando funcionamento desnecessário.</p>
+      </div>
+      <div class="card">
+        <div class="icone">💰</div>
+        <h3>Economia</h3>
+        <p>Fonte renovável pode contribuir para reduzir custos operacionais.</p>
+      </div>
+      <div class="card">
+        <div class="icone">🌎</div>
+        <h3>Meio ambiente</h3>
+        <p>Redução da dependência de fontes de energia não renováveis.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. ACESSIBILIDADE -->
+  <section id="acessibilidade">
+    <h2>♿ Tecnologia para todos</h2>
+    <p id="texto-acessibilidade">Um projeto tecnológico só é realmente inclusivo quando pode ser utilizado e compreendido por diferentes pessoas. Por isso, nosso site foi desenvolvido considerando princípios de acessibilidade digital.</p>
+
+    <div class="grid-sensores">
+      <div class="sensor-card"><div class="icone">👁️</div><h4>Contraste adequado</h4><p>Cores escolhidas para facilitar a leitura.</p></div>
+      <div class="sensor-card"><div class="icone">🔤</div><h4>Fontes legíveis</h4><p>Tamanho e estilo que facilitam a visualização.</p></div>
+      <div class="sensor-card"><div class="icone">🖼️</div><h4>Texto alternativo</h4><p>Descrições para leitores de tela.</p></div>
+      <div class="sensor-card"><div class="icone">⌨️</div><h4>Navegação por teclado</h4><p>Acesso sem depender exclusivamente do mouse.</p></div>
+      <div class="sensor-card"><div class="icone">📱</div><h4>Design responsivo</h4><p>Funciona em computadores, tablets e celulares.</p></div>
+      <div class="sensor-card"><div class="icone">🧭</div><h4>Navegação simples</h4><p>Menu organizado e títulos claros.</p></div>
+    </div>
+
+    <button class="btn-ouvir" id="btnOuvir" aria-label="Ouvir esta seção em voz alta">
+      🔊 Ouvir esta seção
+    </button>
+  </section>
+
+  <!-- 12. SIMULADOR / GRÁFICO -->
+  <section id="simulador">
+    <h2>📊 Como podemos medir a eficiência?</h2>
+    <p><strong>Fórmula conceitual:</strong> Eficiência = energia térmica aproveitada ÷ energia solar recebida</p>
+    <p>Para avaliar o sistema, comparamos a quantidade de energia solar recebida pelo coletor com a quantidade de energia efetivamente transferida para a água.</p>
+
+    <div class="grafico-container">
+      <h3 style="color: var(--amarelo);">Temperatura da piscina ao longo do tempo</h3>
+      <canvas id="graficoTemp" width="600" height="300" aria-label="Gráfico de temperatura"></canvas>
+    </div>
+
+    <div class="simulador">
+      <h3>🧪 Laboratório Virtual</h3>
+      <p style="font-size: 0.9rem; color: var(--verde); margin-bottom: 1rem;">
+        <em>Os resultados são estimativas didáticas, não previsão de desempenho real.</em>
+      </p>
+
+      <label for="tempInicial">Temperatura inicial: <span id="lblTempIni">24</span> °C</label>
+      <input type="range" id="tempInicial" min="15" max="30" value="24" />
+
+      <label for="tempDesejada">Temperatura desejada: <span id="lblTempDes">30</span> °C</label>
+      <input type="range" id="tempDesejada" min="25" max="40" value="30" />
+
+      <label for="intensidade">Intensidade solar:</label>
+      <select id="intensidade">
+        <option value="baixa">Baixa 🌥️</option>
+        <option value="media" selected>Média ⛅</option>
+        <option value="alta">Alta ☀️</option>
+      </select>
+
+      <label for="area">Área do coletor: <span id="lblArea">10</span> m²</label>
+      <input type="range" id="area" min="2" max="30" value="10" />
+
+      <button class="btn-simular" id="btnSimular">▶️ SIMULAR</button>
+
+      <div class="resultado-simulador" id="resultadoSimulador" aria-live="polite">
+        Ajuste os parâmetros e clique em SIMULAR.
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. INOVAÇÃO -->
+  <section id="inovacao">
+    <h2>💡 O que torna nossa proposta diferente?</h2>
+    <p>Nossa proposta combina energia solar + óptica + sensores + programação + acessibilidade em um único sistema.</p>
+    <p>Mais do que desenvolver uma solução para aquecer uma piscina, buscamos demonstrar como diferentes áreas do conhecimento podem trabalhar juntas para solucionar problemas reais.</p>
+
+    <div class="inovacao-anim">
+      <div class="palavras-inovacao">
+        <span class="palavra-inov">Física</span>
+        <span class="palavra-inov">Tecnologia</span>
+        <span class="palavra-inov">Programação</span>
+        <span class="palavra-inov">Sustentabilidade</span>
+        <span class="palavra-inov">Inclusão</span>
+      </div>
+      <div class="seta-grande">↓</div>
+      <div class="solucao-final">🌎 Solução integrada</div>
+    </div>
+  </section>
+
+  <!-- 14. IMPACTO CEP -->
+  <section id="impacto">
+    <h2>🏫 Um projeto para a nossa comunidade</h2>
+    <p>A proposta foi desenvolvida pensando na piscina térmica do CEP e na possibilidade de aplicar conhecimentos estudados em sala de aula a uma situação real.</p>
+    <p>Além da função de aquecimento, o projeto pode servir como ferramenta educativa para demonstrar conceitos de Física, programação, robótica, sustentabilidade e acessibilidade.</p>
+  </section>
+
+  <!-- 15. EQUIPE -->
+  <section id="equipe">
+    <h2>👥 Nossa equipe</h2>
+    <div class="equipe-grid">
+      <div class="membro"><div class="avatar">👩</div><h4>Nome 1</h4><p>Pesquisa e Física</p></div>
+      <div class="membro"><div class="avatar">👨</div><h4>Nome 2</h4><p>Programação</p></div>
+      <div class="membro"><div class="avatar">👩</div><h4>Nome 3</h4><p>Design e acessibilidade</p></div>
+      <div class="membro"><div class="avatar">👨</div><h4>Nome 4</h4><p>Robótica e automação</p></div>
+      <div class="membro"><div class="avatar">👩</div><h4>Nome 5</h4><p>Pesquisa e apresentação</p></div>
+    </div>
+  </section>
+
+  <!-- 16. CONCLUSÃO -->
+  <section id="conclusao">
+    <h2>🏁 O futuro pode ser mais inteligente e sustentável</h2>
+    <p>O projeto da Piscina Inteligente mostra que a tecnologia pode ser utilizada para resolver problemas reais de maneira sustentável.</p>
+    <p>A partir dos conhecimentos de Óptica, Física, Robótica e Programação, desenvolvemos uma proposta capaz de utilizar energia solar e automação para controlar o aquecimento da piscina.</p>
+    <p>Mais do que aquecer a água, nosso objetivo é mostrar que ciência, tecnologia, sustentabilidade e inclusão podem trabalhar juntas para transformar o ambiente escolar.</p>
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="#solucao" class="btn-principal">☀️ Conheça nossa solução</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p><strong>🌞 Piscina Inteligente — Projeto Integrador CEP</strong></p>
+  <p>Desenvolvido com HTML, CSS e JavaScript • 2026</p>
+  <p style="font-size: 0.85rem; color: var(--verde);">Energia solar + Óptica + Robótica + Programação + Acessibilidade</p>
+</footer>
+
+<button class="btn-contraste" id="btnContraste" aria-label="Ativar alto contraste">🌓 Contraste</button>
+
+<script src="script.js"></script>
+</body>
+</html>
