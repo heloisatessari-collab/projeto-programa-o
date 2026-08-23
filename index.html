@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -150,7 +149,25 @@
     <p>A luz branca do Sol é formada por diferentes cores, que podem ser observadas quando a luz é separada em seus componentes, como demonstrado pelo Disco de Newton.</p>
     <p>As cores também estão relacionadas à forma como os materiais absorvem e refletem a luz. Um material escuro absorve grande parte da radiação incidente, enquanto materiais claros tendem a refletir uma parcela maior.</p>
 
-    <h3 style="color: var(--amarelo); margin-top: 1.5rem;">Escolha uma cor para o coletor:</h3>
+    <!-- DISCO DE NEWTON INTERATIVO -->
+    <div style="text-align: center; margin: 2rem 0;">
+      <h3 style="color: var(--amarelo); margin-bottom: 1rem;">🎡 Disco de Newton Interativo</h3>
+      <p style="margin-bottom: 1rem;">Clique no botão para girar o disco e ver como as cores se misturam!</p>
+      
+      <div class="disco-container">
+        <div class="disco-newton" id="discoNewton" aria-label="Disco de Newton com 7 cores do arco-íris">
+        </div>
+      </div>
+
+      <button class="btn-simular" id="btnGirarDisco" style="margin-top: 1.5rem;" aria-label="Girar o disco de Newton">
+        ▶️ Girar Disco
+      </button>
+      <p id="statusDisco" style="margin-top: 1rem; color: var(--verde); font-weight: bold;" aria-live="polite">
+        Disco parado — observe as 7 cores separadas
+      </p>
+    </div>
+
+    <h3 style="color: var(--amarelo); margin-top: 2rem;">Escolha uma cor para o coletor:</h3>
     <div class="seletor-cores" role="group" aria-label="Seletor de cores do coletor">
       <button class="botao-cor vermelho" data-cor="Vermelho" aria-label="Vermelho">🔴</button>
       <button class="botao-cor azul" data-cor="Azul" aria-label="Azul">🔵</button>
@@ -378,11 +395,26 @@
   <section id="equipe">
     <h2>👥 Nossa equipe</h2>
     <div class="equipe-grid">
-      <div class="membro"><div class="avatar">👩</div><h4>Nome 1</h4><p>Pesquisa e Física</p></div>
-      <div class="membro"><div class="avatar">👨</div><h4>Nome 2</h4><p>Programação</p></div>
-      <div class="membro"><div class="avatar">👩</div><h4>Nome 3</h4><p>Design e acessibilidade</p></div>
-      <div class="membro"><div class="avatar">👨</div><h4>Nome 4</h4><p>Robótica e automação</p></div>
-      <div class="membro"><div class="avatar">👩</div><h4>Nome 5</h4><p>Pesquisa e apresentação</p></div>
+      <div class="membro">
+        <div class="avatar">👩</div>
+        <h4>Heloisa</h4>
+        <p>Pesquisa e Física</p>
+      </div>
+      <div class="membro">
+        <div class="avatar">👩</div>
+        <h4>Gabrielly</h4>
+        <p>Programação</p>
+      </div>
+      <div class="membro">
+        <div class="avatar">👩</div>
+        <h4>Luiza</h4>
+        <p>Design e acessibilidade</p>
+      </div>
+      <div class="membro">
+        <div class="avatar">👩</div>
+        <h4>Maria Luiza</h4>
+        <p>Robótica e automação</p>
+      </div>
     </div>
   </section>
 
