@@ -581,6 +581,12 @@ canvas {
 
 .membro h4 { color: var(--amarelo); margin-bottom: 0.3rem; }
 .membro p { color: var(--verde); font-size: 0.9rem; }
+/* Ajuste para 5 integrantes em telas grandes */
+@media (min-width: 900px) {
+  .equipe-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
 
 /* ===========================
    INOVAÇÃO
