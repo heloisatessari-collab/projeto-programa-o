@@ -233,3 +233,25 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.3 });
 
 document.querySelectorAll('.diagrama').forEach(d => observer.observe(d));
+
+// ====== DISCO DE NEWTON ======
+const disco = document.getElementById('discoNewton');
+const btnGirar = document.getElementById('btnGirarDisco');
+const statusDisco = document.getElementById('statusDisco');
+let discoGirando = false;
+
+btnGirar.addEventListener('click', () => {
+  discoGirando = !discoGirando;
+  
+  if (discoGirando) {
+    disco.classList.add('girando');
+    btnGirar.textContent = '⏸️ Parar Disco';
+    statusDisco.textContent = '🌀 Disco girando — as cores se misturam e formam o branco!';
+    statusDisco.style.color = 'var(--amarelo)';
+  } else {
+    disco.classList.remove('girando');
+    btnGirar.textContent = '▶️ Girar Disco';
+    statusDisco.textContent = 'Disco parado — observe as 7 cores separadas';
+    statusDisco.style.color = 'var(--verde)';
+  }
+});
