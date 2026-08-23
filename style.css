@@ -661,6 +661,80 @@ footer p { color: var(--branco); margin: 0.3rem 0; }
 }
 
 /* ===========================
+   DISCO DE NEWTON 🎡
+   =========================== */
+.disco-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  perspective: 1000px;
+}
+
+.disco-newton {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: relative;
+  background: conic-gradient(
+    #ff0000 0deg 51.4deg,
+    #ff7f00 51.4deg 102.8deg,
+    #ffff00 102.8deg 154.2deg,
+    #00ff00 154.2deg 205.6deg,
+    #0000ff 205.6deg 257deg,
+    #4b0082 257deg 308.4deg,
+    #9400d3 308.4deg 360deg
+  );
+  box-shadow: 
+    0 0 30px rgba(255, 200, 87, 0.5),
+    0 0 60px rgba(0, 168, 232, 0.3),
+    inset 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: background 0.5s ease;
+  border: 5px solid var(--branco);
+}
+
+.disco-newton.girando {
+  animation: girarDisco 1.5s linear infinite;
+  background: radial-gradient(circle, #ffffff 0%, #e0e0e0 100%);
+  box-shadow: 
+    0 0 40px rgba(255, 255, 255, 0.6),
+    0 0 80px rgba(255, 200, 87, 0.4);
+}
+
+@keyframes girarDisco {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Centro do disco (eixo) */
+.disco-newton::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background: var(--azul-fundo);
+  border-radius: 50%;
+  border: 3px solid var(--branco);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Efeito de brilho nas fatias quando parado */
+.disco-newton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* ===========================
    RESPONSIVO
    =========================== */
 @media (max-width: 768px) {
@@ -683,8 +757,16 @@ footer p { color: var(--branco); margin: 0.3rem 0; }
   .hero h1 { font-size: 2.2rem; }
   .hero .subtitulo { font-size: 1.1rem; }
   section h2 { font-size: 1.6rem; }
+  
+  .disco-newton {
+    width: 200px;
+    height: 200px;
+  }
 }
 
+/* ===========================
+   ACESSIBILIDADE - FOCO
+   =========================== */
 *:focus-visible {
   outline: 3px solid var(--amarelo);
   outline-offset: 2px;
